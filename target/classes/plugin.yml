@@ -1,0 +1,38 @@
+name: Identity
+version: 1.0.0
+main: com.playercontrollerplus.identity.IdentityPlugin
+authors: [PlayerControllerPlus]
+softdepend: [ProtocolLib]
+commands:
+  identity:
+    description: Control players and manage player clones.
+    usage: /identity
+    aliases: [id, ident]
+permissions:
+  identity.admin:
+    description: Grants all Identity permissions.
+    default: op
+    children:
+      identity.control: true
+      identity.release: true
+      identity.clone: true
+      identity.clone.remove: true
+      identity.chat: true
+  identity.control:
+    description: Control an online player.
+    default: op
+  identity.release:
+    description: Release controlled players.
+    default: op
+  identity.clone:
+    description: Create and inspect player clones.
+    default: op
+  identity.clone.remove:
+    description: Remove player clones.
+    default: op
+  identity.chat:
+    description: Send chat as a clone or controlled identity.
+    default: op
+  identity.reload:
+    description: Reload the plugin configuration.
+    default: op

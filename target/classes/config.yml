@@ -1,0 +1,21 @@
+control:
+  block-chat: true
+  block-commands: true
+  block-interactions: true
+clone:
+  copy-skin: true
+  copy-armor: true
+  copy-held-item: true
+  allow-chat: true
+logging:
+  enabled: true
+messages:
+  prefix: "&8[&bIdentity&8] &r"
+  no-permission: "&cYou do not have permission."
+  player-not-found: "&cThat player is not online."
+  clone-not-found: "&cNo active clone has that ID."
+  control-started: "&aYou now control &f{player}&a."
+  control-released: "&aReleased control of &f{player}&a."
+  clone-created: "&aCreated clone &f{id}&a based on &f{player}&a."
+  clone-removed: "&aRemoved clone &f{id}&a."
+  reloaded: "&aConfiguration reloaded."
